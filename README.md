@@ -26,55 +26,62 @@ Encontraremos aqui todas as informações necessárias para compreender seu func
 - PG (Postgres)
     > _Pode ser substituído pelo client SQL de sua preferência_
     
- 
+
 ## Requisitos
 
 - NPM instalado
 - Node.js instalado
+- Git instalado
 
 ## Como Instalar
-- Clone o repositório para qualquer pasta de sua preferência
-- Abra seu terminal na pasta do repositório e digite:
-```
-npm install
-```
+1. Clone o repositório para qualquer pasta de sua preferência:
 
-Após a instalação ser efetuada, configure seu arquivo **.env**:
+    ```bash
+    git clone 
+    ```
 
-```env
-# Porta para o Express
-PORT= Porta_Express (Ex.: 3000)
+3. Abra seu terminal na pasta do repositório e digite:
 
-# Dados de conexão com o Database
-DB_HOST= Host_Do_Databse
-DB_PORT= Porta_Do_Database
-DB_USER= User_Do_Database
-DB_PASS= Senha_Do_Database
-DB_NAME= Nome_Do_Database
+    ```bash
+    npm install
+    ```
 
-# Senha única para criação e autenticação de Tokens
-SENHA_JWT= Chave_Secreta_Para_Tokens
+4. Após a instalação ser efetuada, configure seu arquivo **.env**:
 
-# Dados de acesso ao seu bucket
-BUCKET_NAME= Nome_Do_Bucket
-KEY_ID= Id_Da_Chave
-KEY_NAME= Nome_Da_Chave
-APP_KEY= Senha_De_Acesso_Ao_Bucket
-ENDPOINT_S3= Endpoint_do_Bucket
+    ```env
+    # Porta para o Express
+    PORT= Porta_Express (Ex.: 3000)
 
-# Credenciais do Mailer
-MAIL_HOST= Host_Do_Mailer
-MAIL_PORT= Porta_Do_Mailer
-MAIL_USER= User_Do_Mailer
-MAIL_PASS= Senha_Do_Mailer
-MAIL_FROM= Email_Remetente_Do_Mailer
-```
+    # Dados de conexão com o Database
+    DB_HOST= Host_Do_Databse
+    DB_PORT= Porta_Do_Database
+    DB_USER= User_Do_Database
+    DB_PASS= Senha_Do_Database
+    DB_NAME= Nome_Do_Database
+    
+    # Senha única para criação e autenticação de Tokens
+    SENHA_JWT= Chave_Secreta_Para_Tokens
+    
+    # Dados de acesso ao seu bucket
+    BUCKET_NAME= Nome_Do_Bucket
+    KEY_ID= Id_Da_Chave
+    KEY_NAME= Nome_Da_Chave
+    APP_KEY= Senha_De_Acesso_Ao_Bucket
+    ENDPOINT_S3= Endpoint_do_Bucket
+    
+    # Credenciais do Mailer
+    MAIL_HOST= Host_Do_Mailer
+    MAIL_PORT= Porta_Do_Mailer
+    MAIL_USER= User_Do_Mailer
+    MAIL_PASS= Senha_Do_Mailer
+    MAIL_FROM= Email_Remetente_Do_Mailer
+    ```
 
-Com seu arquivo **.env** configurado, inicialize a API:
+5. Com seu arquivo **.env** configurado, inicialize a API:
 
-```
-npm run dev
-```
+    ```bash
+    npm run dev
+    ```
 
 Agora a API está pronta para ser testada e utilizada!
 
