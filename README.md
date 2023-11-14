@@ -87,6 +87,32 @@ Agora a API está pronta para ser testada e utilizada!
 > [!IMPORTANT]
 > ***Caso queira fazer uso desta API remotamente, basta dar deploy em algum serviço de deploy de APIs (Ex.: Cyclic, etc.) e configurar suas variáveis de ambiente nas configurações do seu deploy!***
 
+## 🛢️ Estruturação do Banco de Dados
+### Dump Code:
+
+## 📌 Endpoints
+
+### Cadastrar Usuário:
+### Fazer Login:
+### Detalhar Usuário:
+### Atualizar Usuário:
+##
+### Cadastrar Produto:
+### Detalhar Produto:
+### Listar Produtos:
+### Editar Produto:
+### Excluir Produto:
+##
+### Cadastrar Cliente:
+### Detalhar Cliente:
+### Listar Clientes:
+### Editar Cliente:
+##
+### Listar Categorias:
+## 
+### Cadastrar Pedidos:
+### Listar Pedidos:
+
 ## 👨🏻‍💻 Colaboradores
 
 
