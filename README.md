@@ -1,5 +1,7 @@
 # 📠 Pdv API
 
+## 📂 Sobre o Projeto
+
 Esta é uma **API RESTful** do sistema de um ponto de vendas (pdv) completa, desenvolvida com base em **Javascript**, **Express.js** e **Node.js** que foi estruturada para sanar a demanda de um sistema que pudesse gerenciar e armazenar produtos e pedidos efetuados, dados de usuarios (funcionários) e cadastro de clientes de maneira rápida, eficiente e com qualidade.
 
 Encontraremos aqui todas as informações necessárias para compreender seu funcionamento, capacitar a utilização da API disponibilizada e detalhar suas especificações técnicas.
@@ -25,7 +27,7 @@ Encontraremos aqui todas as informações necessárias para compreender seu func
 - PG (Postgres)
     > _Pode ser substituído pelo client SQL de sua preferência_
 
-## ⚙️ Como executar
+## ⚙️ Como Executar
 ### Requisitos
 
 - [Node.js](https://nodejs.org/en/download/current) instalado
