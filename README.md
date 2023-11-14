@@ -39,7 +39,7 @@ Encontraremos aqui todas as informações necessárias para compreender seu func
     git clone git@github.com:brenoww/pdv-API.git
     ```
 
-2. Abra seu terminal na pasta do repositório e digite:
+2. Abra seu terminal na pasta do repositório e execute o comando:
 
     ```bash
     npm install
