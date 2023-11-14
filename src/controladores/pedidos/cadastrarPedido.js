@@ -1,5 +1,6 @@
 const knex = require("../../conexoes/knex");
 const buscarErroSeNaoEcontrado = require("../../utilitarios/servicos/buscarErroSeNaoEcontrado");
+const { sendMail } = require("../../utilitarios/servicos/sendMail");
 
 const cadastrarPedido = async (req, res) => {
     const { cliente_id, observacao, pedido_produtos } = req.body;
@@ -11,7 +12,6 @@ const cadastrarPedido = async (req, res) => {
         let valorTotal = 0;
         for (item of pedido_produtos) {
             const { produto_id, quantidade_produto } = item;
-            console.log(produto_id);
 
             const produto = await knex("produtos").where({ id: produto_id }).first();
             if (!produto) {
@@ -21,7 +21,6 @@ const cadastrarPedido = async (req, res) => {
                 return res
                     .status(404)
                     .json({ message: `quantidade pedida do produto *${produto.descricao}* é menor do que em estoque` });
-            console.log("----produto existe - quantidade ok ----");
 
             valorTotal += produto.valor * quantidade_produto;
 
@@ -38,7 +37,6 @@ const cadastrarPedido = async (req, res) => {
         };
         const [pedido_id] = await knex("pedidos").insert(pedido).returning("id");
         const idPedido = pedido_id.id;
-        console.log("numero pedido :", pedido_id.id);
 
         for (const item of pedido_produtos) {
             const { produto_id, quantidade_produto } = item;
@@ -51,6 +49,33 @@ const cadastrarPedido = async (req, res) => {
                 valor_produto: produto.valor,
             });
         }
+        const clienteEmail = await knex("clientes").select("email").where({ id: cliente_id }).first();
+        const toEmail = clienteEmail.email;
+        const emailBody = `
+      <p>Obrigado por fazer seu pedido!</p>
+      <p>Aqui estão os detalhes do seu pedido:</p>
+      <ul>
+        <li>Cliente ID: ${cliente_id}</li>
+        <li>Observação: ${observacao}</li>
+        <li>Itens do Pedido:</li>
+    <ul>
+      ${pedido_produtos
+          .map(
+              (item) => `
+        <li>
+          Produto ID: ${item.produto_id},
+          Quantidade: ${item.quantidade_produto}
+        </li>
+      `
+          )
+          .join("")}
+    </ul>
+        <li>Valor Total: ${valorTotal}</li>
+        
+      </ul>
+      <p>Seu pedido será processado em breve. Agradecemos por escolher nossa loja!</p>
+    `;
+        sendMail(toEmail, "Confirmação do Pedido", emailBody);
         return res.status(201).json({ mensagem: "Pedido cadastrado com sucesso" });
     } catch (error) {
         return res.status(400).json({ mensagem: error.message });
