@@ -17,7 +17,6 @@ Encontraremos aqui todas as informações necessárias para compreender seu func
 - 🌐 AWS-SDK
 - 📑 Multer
 - 📧 Nodemailer
-##
 ### Tecnologias utilizdas:
 
 - Npm
@@ -26,13 +25,13 @@ Encontraremos aqui todas as informações necessárias para compreender seu func
 - PG (Postgres)
     > _Pode ser substituído pelo client SQL de sua preferência_
 
-## Como Executar
+## Como executar
 ### Requisitos
 
 - [Node.js](https://nodejs.org/en/download/current) instalado
 - [Git](https://git-scm.com/downloads) instalado
 
-### Como Instalar
+### Como instalar
 1. Clone este repositório para qualquer pasta de sua preferência:
     ```bash
     git clone git@github.com:brenoww/pdv-API.git
