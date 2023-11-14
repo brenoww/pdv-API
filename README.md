@@ -34,19 +34,18 @@ Encontraremos aqui todas as informações necessárias para compreender seu func
 - Git instalado
 
 ## Como Instalar
-1. Clone o repositório para qualquer pasta de sua preferência:
-
+1. Clone este repositório para qualquer pasta de sua preferência:
     ```bash
-    git clone 
+    git clone git@github.com:brenoww/pdv-API.git
     ```
 
-3. Abra seu terminal na pasta do repositório e digite:
+2. Abra seu terminal na pasta do repositório e digite:
 
     ```bash
     npm install
     ```
 
-4. Após a instalação ser efetuada, configure seu arquivo **.env**:
+3. Após a instalação ser efetuada, crie e configure seu arquivo **.env**:
 
     ```env
     # Porta para o Express
