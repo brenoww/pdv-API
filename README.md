@@ -25,15 +25,14 @@ Encontraremos aqui todas as informações necessárias para compreender seu func
 - Express
 - PG (Postgres)
     > _Pode ser substituído pelo client SQL de sua preferência_
-    
 
-## Requisitos
+## Como Executar
+### Requisitos
 
-- NPM instalado
-- Node.js instalado
-- Git instalado
+- [Node.js](https://nodejs.org/en/download/current) instalado
+- [Git](https://git-scm.com/downloads) instalado
 
-## Como Instalar
+### Como Instalar
 1. Clone este repositório para qualquer pasta de sua preferência:
     ```bash
     git clone git@github.com:brenoww/pdv-API.git
@@ -45,7 +44,7 @@ Encontraremos aqui todas as informações necessárias para compreender seu func
     npm install
     ```
 
-3. Após a instalação ser efetuada, crie e configure seu arquivo **.env**:
+3. Após a instalação ser efetuada, crie e configure seu arquivo **.env** com base no .env.example:
 
     ```env
     # Porta para o Express
