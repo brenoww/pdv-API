@@ -87,7 +87,7 @@ Agora a API está pronta para ser testada e utilizada!
 > [!IMPORTANT]
 > ***Caso queira fazer uso desta API remotamente, basta dar deploy em algum serviço de deploy de APIs (Ex.: Cyclic, etc.) e configurar suas variáveis de ambiente nas configurações do seu deploy!***
 
-
+## 👨🏻‍💻 Colaboradores
 
 
   
