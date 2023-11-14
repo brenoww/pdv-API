@@ -4,7 +4,7 @@ Esta é uma **API RESTful** do sistema de um ponto de vendas (pdv) completa, des
 
 Encontraremos aqui todas as informações necessárias para compreender seu funcionamento, capacitar a utilização da API disponibilizada e detalhar suas especificações técnicas.
 
-## :hammer_and_wrench: Bibliotecas e Tecnologias
+## 🛠️ Bibliotecas e Tecnologias
 
 ### Bibliotecas utilizadas:
 
@@ -25,7 +25,7 @@ Encontraremos aqui todas as informações necessárias para compreender seu func
 - PG (Postgres)
     > _Pode ser substituído pelo client SQL de sua preferência_
 
-## Como executar
+## ⚙️ Como executar
 ### Requisitos
 
 - [Node.js](https://nodejs.org/en/download/current) instalado
