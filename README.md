@@ -7,44 +7,23 @@ Encontraremos aqui todas as informações necessárias para compreender seu func
 ## :hammer_and_wrench: Bibliotecas e Tecnologias
 
 ### Bibliotecas utilizadas:
-- **📋 Dotenv**
-  - Módulo para armazenamento e leitura de variáveis de ambiente
-  - Dados sensíveis do sistema
-  
-- **📲 Cors**
-  - Habilitar o consumo da API por outras origens
- 
-- **✅ JOI**
-  - Validação de Dados
 
-- **🛢️ Knex.js**
-  - Conexão SQL
-  - Query Building
-    
-- **🔐 Bcrypt**
-  - Encriptação e decodificação de dados sensíveis para cadastro no sistema
- 
-- **🔑 Json Web Token - JWT**
-  - Geração e Validação de Tokens de acesso ao sistema
- 
-- **🌐 AWS-SDK**
-  - Conexão, armazenamento e leitura de dados em Buckets
-
-- **📑 Multer**
-  - Habilitar o uso e captura de dados em Multipart/Form-Data
-
-- **📧 Nodemailer**
-  - Envio automatizado de e-mails
+- 📋 Dotenv  
+- 📲 Cors
+- ✅ JOI
+- 🛢️ Knex.js    
+- 🔐 Bcrypt 
+- 🔑 Json Web Token - JWT 
+- 🌐 AWS-SDK
+- 📑 Multer
+- 📧 Nodemailer
 ##
 ### Tecnologias utilizdas:
+
 - Npm
 - Node.js 
 - Express
-  - Framework base para estruturação do sistema de rotas e comunicação da API
- 
 - PG (Postgres)
-  - PostegresSQL Client
-
     > _Pode ser substituído pelo client SQL de sua preferência_
     
  
