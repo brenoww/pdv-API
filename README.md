@@ -1,4 +1,4 @@
-# :fax: Pdv API
+# 📠 Pdv API
 
 Esta é uma **API RESTful** do sistema de um ponto de vendas (pdv) completa, desenvolvida com base em **Javascript**, **Express.js** e **Node.js** que foi estruturada para sanar a demanda de um sistema que pudesse gerenciar e armazenar produtos e pedidos efetuados, dados de usuarios (funcionários) e cadastro de clientes de maneira rápida, eficiente e com qualidade.
 
