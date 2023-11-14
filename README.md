@@ -74,7 +74,7 @@ DB_PASS= Senha_Do_Database
 DB_NAME= Nome_Do_Database
 
 # Senha única para criação e autenticação de Tokens
-SENHA_JWT= Sua_Chave_Para_Tokens
+SENHA_JWT= Chave_Secreta_Para_Tokens
 
 # Dados de acesso ao seu bucket
 BUCKET_NAME= Nome_Do_Bucket
