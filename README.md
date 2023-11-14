@@ -89,7 +89,7 @@ Agora a API está pronta para ser testada e utilizada!
 
 ## 🛢️ Estruturação do Banco de Dados
 
-Antes de utilizar das funcionalidades da API, é necessário que seu banco de dados esteja estruturado para receber as informações e alterações. Para isso, conecte-se ao banco utilizando algum Database Manager (Ex.: Beekeeper Studio, etc.) e execute o dump SQL escrito no arquivo `./pdv-API/dump.sql`, seguindo passo a passo.
+Antes de utilizar das funcionalidades da API, é necessário que seu banco de dados esteja estruturado para receber as informações e alterações corretamente. Para isso, conecte-se ao banco utilizando algum Database Manager (Ex.: Beekeeper Studio, etc.) e execute o dump SQL escrito no arquivo `./pdv-API/dump.sql`, seguindo passo a passo.
 
 <details>
 <summary><b>Dump Code:</b></summary>
@@ -140,12 +140,12 @@ CREATE TABLE clientes(
 );
 
 create table pedidos (
-	id serial primary key,
+  id serial primary key,
   cliente_id integer references clientes(id) not null,
   observacao text,
   valor_total integer
 );
-  
+		  
 create table pedido_produtos(
   id serial primary key,
   pedido_id integer references pedidos(id) not null,
@@ -167,8 +167,6 @@ VALUES
 ('Bebê'),
 ('Games');
 ```
-
-
 </details>
  
   
