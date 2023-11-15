@@ -255,10 +255,10 @@ VALUES
  	```js
   //Status Code: 200 OK
 	```
- ##
+##
 > [!WARNING]
 > Apartir daqui **TODAS** as rotas requerem o token de login como Bearer Token
-
+##
 ### Detalhar Perfil do Usuário:
 
 **[GET]** `/usuario`
@@ -298,10 +298,57 @@ VALUES
  	Response Body
   ```js  
   //Status Code: 201 Created
- 	//Sem resposta no corpo
+  //Sem resposta no corpo
 	```
-##
 ### Cadastrar Produto:
+
+**[POST]** `/produto`
+
+- Ao acessar esta rota, passando o seguinte JSON em uma variável **"dados_produto"** de tipo **multiline-text** e um arquivo de imagem (opcional) em uma variável **"imagem_produto"** como Multipart-Form/Data, como no exemplo abaixo, o sistema cadastrará o produto e retornará as seguintes informações:
+
+	Exemplo: ![Exemplo-Cadastro-Produto]()	
+
+	Request Body
+	```json
+	{
+ 	  "dados_produto": {
+ 	     "descricao": "produto-exemplo",
+	     "quantidade_estoque": 10,
+	     "valor": 1000,
+ 	     "categoria_id": 1
+ 	  }
+	}
+	```
+
+	Request Files
+	```json
+	{
+ 	  "imagem_produto": [
+	     {
+ 	       "originalname": "produto-exemplo",
+	       "buffer": "< image-buffer >",
+	       "size": 321321,
+ 	       "mimetype": "image/png"
+ 	     }
+	  ]
+	}
+	```
+
+ 	Response Body
+  ```json
+	{
+		"id": 1,
+		"descricao": "produto-exemplo",
+		"quantidade_estoque": 10,
+		"valor": 1000,
+		"categoria_id": 1,
+		"produto_imagem": "https://bucket.endpoint.com/imagens/produto/1/filename.png"
+	}
+  ```
+  ```js  
+  //Status Code: 201 Created  
+	```
+
 ### Detalhar Produto:
 ### Listar Produtos:
 ### Editar Produto:
