@@ -6,26 +6,36 @@ Esta é uma **API RESTful** do sistema de um ponto de vendas (pdv) completa, des
 
 Encontraremos aqui todas as informações necessárias para compreender seu funcionamento, capacitar a utilização da API disponibilizada e detalhar suas especificações técnicas.
 
-## 🛠️ Bibliotecas e Tecnologias
+## 🕹️ Funcionalidades
 
-### Bibliotecas utilizadas:
+A API conta com inúmeras funcionalidades para Usuarios, Clientes, Pedidos e Produtos. Segue a lista abaixo:
 
-- 📋 Dotenv  
-- 📲 Cors
-- ✅ JOI
-- 🛢️ Knex.js    
-- 🔐 Bcrypt 
-- 🔑 Json Web Token - JWT 
-- 🌐 AWS-SDK
-- 📑 Multer
-- 📧 Nodemailer
-### Tecnologias utilizdas:
+Usuários
+- [x] Cadastrar Usuário
+- [X] Fazer Login
+- [x] Editar Perfil do Usuário
+- [x] Detalhar Perfil do Usuário
 
-- Npm
-- Node.js 
-- Express
-- PG (Postgres)
-    > _Pode ser substituído pelo client SQL de sua preferência_
+Produtos
+- [x] Cadastrar Produto
+- [x] Detalhar Produto
+- [x] Listar Produtos
+- [x] Editar Produto
+- [x] Excluir Produto
+      
+Clientes
+- [x] Cadastrar Cliente
+- [x] Detalhar Cliente
+- [x] Editar Cliente
+- [x] Listar Clientes
+      
+Pedidos
+- [x] Cadastrar Pedido
+- [x] Listar Pedido
+      
+Categorias
+- [x] Listar Categorias
+
 
 ## ⚙️ Como Executar
 ### Requisitos
@@ -81,15 +91,18 @@ Encontraremos aqui todas as informações necessárias para compreender seu func
     ```bash
     npm run dev
     ```
+O endpoint principal será onde sua API se encontra, seja o endpoint criado no deploy: Ex.: `https://brave-lion-raincoat.cyclic.app/` - **Cyclic**, ou o endpoint local: `htttp://localhost:3000`.
 
-Agora a API está pronta para ser testada e utilizada!
+A API está quase pronta para ser testada e utilizada! 
+<br><br>
 
 > [!IMPORTANT]
 > ***Caso queira fazer uso desta API remotamente, basta dar deploy em algum serviço de deploy de APIs (Ex.: Cyclic, etc.) e configurar suas variáveis de ambiente nas configurações do seu deploy!***
+<br>
 
 ## 🛢️ Estruturação do Banco de Dados
 
-Antes de utilizar das funcionalidades da API, é necessário que seu banco de dados esteja estruturado para receber as informações e alterações corretamente. Para isso, conecte-se ao banco utilizando algum Database Manager (Ex.: Beekeeper Studio, etc.) e execute o dump SQL escrito no arquivo `./pdv-API/dump.sql`, seguindo passo a passo.
+Para finalizar, antes de utilizar das funcionalidades da API, é necessário que seu banco de dados esteja estruturado para receber as informações e alterações corretamente. Para isso, conecte-se ao banco utilizando algum Database Manager (Ex.: Beekeeper Studio, etc.) e execute o dump SQL escrito no arquivo `./pdv-API/dump.sql`, seguindo passo a passo.
 
 <details>
 <summary><b>Dump Code:</b></summary>
@@ -106,51 +119,51 @@ DROP TABLE IF EXISTS pedidos;
 -- Passo 2: Criar novas tabelas
 
 CREATE TABLE usuarios(
-  id SERIAL PRIMARY KEY,
-  nome TEXT,
-  email TEXT UNIQUE,
-  senha TEXT
+  	id SERIAL PRIMARY KEY,
+  	nome TEXT NOT NULL,
+  	email TEXT NOT NULL UNIQUE,
+  	senha TEXT NOT NULL
 );
 
 CREATE TABLE categorias(
-  id SERIAL PRIMARY KEY,
-  descricao TEXT
+  	id SERIAL PRIMARY KEY,
+  	descricao TEXT NOT NULL
 );
 
 CREATE TABLE produtos(
-  id SERIAL PRIMARY KEY,
-  descricao VARCHAR(250) NOT NULL,
-  quantidade_estoque INT NOT NULL,
-  valor INT NOT NULL,
-  categoria_id INT REFERENCES categorias(id),
-  produto_imagem TEXT;
+  	id SERIAL PRIMARY KEY,
+  	descricao VARCHAR(250) NOT NULL,
+  	quantidade_estoque INT NOT NULL,
+  	valor INT NOT NULL,
+  	categoria_id INT REFERENCES categorias(id),
+  	produto_imagem TEXT;
 );
 
 CREATE TABLE clientes(
-  id SERIAL PRIMARY KEY,
-  nome TEXT NOT NULL ,
-  email TEXT NOT NULL UNIQUE,
-  cpf TEXT NOT NULL UNIQUE,
-  cep TEXT,
-  rua TEXT,
-  numero INT,
-  bairro TEXT,
-  cidade TEXT,
-  estado TEXT
+  	id SERIAL PRIMARY KEY,
+  	nome TEXT NOT NULL ,
+  	email TEXT NOT NULL UNIQUE,
+  	cpf TEXT NOT NULL UNIQUE,
+  	cep TEXT,
+  	rua TEXT,
+  	numero INT,
+  	bairro TEXT,
+  	cidade TEXT,
+  	estado TEXT
 );
 
 create table pedidos (
-  id serial primary key,
-  cliente_id integer references clientes(id) not null,
-  observacao text,
-  valor_total integer
+	id SERIAL PRIMARY KEY,
+	cliente_id INTEGER REFERENCES clientes(id) NOT NULL,
+  	observacao TEXT,
+  	valor_total INTEGER
 );
 		  
 create table pedido_produtos(
-  id serial primary key,
-  pedido_id integer references pedidos(id) not null,
-  produto_id integer references produtos(id) not null,
-  valor_produto integer not null
+  	id SERIAL PRIMARY KEY,
+  	pedido_id INTEGER REFERENCES pedidos(id) NOT NULL,
+  	produto_id INTEGER REFERENCES produtos(id) NOT NULL,
+  	valor_produto INTEGER NOT NULL
 );
 
 -- Passo 3: Cadastrar categorias
@@ -169,13 +182,88 @@ VALUES
 ```
 </details>
  
-  
+## 🛠️ Bibliotecas e Tecnologias
+
+### Bibliotecas utilizadas:
+
+- 📋 Dotenv  
+- 📲 Cors
+- ✅ JOI
+- 🛢️ Knex.js    
+- 🔐 Bcrypt 
+- 🔑 Json Web Token - JWT 
+- 🌐 AWS-SDK
+- 📑 Multer
+- 📧 Nodemailer
+### Tecnologias utilizdas:
+
+- Npm
+- Node.js 
+- Express
+- PG (Postgres)
+  > _Pode ser substituído pelo client SQL de sua preferência_  
 
 ## 📌 Endpoints
 
 ### Cadastrar Usuário:
+
+**[POST]** `/usuario`
+
+- Ao acessar esta rota, passando o seguinte JSON no corpo da requisição (body), será cadastrado um usuário no sistema:
+
+
+	Request Body
+	```json		 	 
+	{
+ 	  "nome": "Nome Exemplo",
+ 	  "email": "exemplo@email.com",
+ 	  "senha": "exemplo"
+	}
+	```
+
+ 	Response Body
+	```js
+ 	//Status Code: 201 Created
+ 	//Sem resposta no corpo		 
+	```
+ 
 ### Fazer Login:
+
+**[POST]** `/login`
+
+- Ao acessar esta rota, passando o seguinte JSON no corpo da requisição (body), o login será efetuado e o sistema retornará as seguintes informações:
+
+	Request Body
+	```json
+ 	{
+ 	  "email": "exemplo@email.com",
+ 	  "senha": "exemplo"
+ 	}
+	```
+
+ 	Response Body
+  
+	```json		 	 
+	{
+ 	  "usuario": {
+ 	     "id": "1",
+ 	     "email": "exemplo@email.com"
+ 	  },
+ 	  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9"
+	}
+	```
+ 	```js
+  //Status Code: 200 OK
+	```
+ ##
+> [!WARNING]
+> Apartir daqui **TODAS** as rotas requerem o token de login
+
 ### Detalhar Usuário:
+
+**[GET]** `/usuario`
+
+
 ### Atualizar Usuário:
 ##
 ### Cadastrar Produto:
