@@ -305,9 +305,11 @@ VALUES
 
 **[POST]** `/produto`
 
-- Ao acessar esta rota, passando o seguinte JSON em uma variável **"dados_produto"** de tipo **multiline-text** e um arquivo de imagem (opcional) em uma variável **"imagem_produto"** como Multipart-Form/Data, como no exemplo abaixo, o sistema cadastrará o produto e retornará as seguintes informações:
+- Ao acessar esta rota, passando o seguinte JSON em uma variável **"dados_produto"** de tipo **multiline-text** e um arquivo de imagem (opcional) em uma variável **"imagem_produto"**, como um Multipart-Form/Data, como no exemplo abaixo, o sistema cadastrará o produto e retornará as seguintes informações:
 
-	Exemplo: ![Exemplo-Cadastro-Produto]()	
+	Exemplo:
+
+	![Exemplo-Cadastro-Produto](https://raw.githubusercontent.com/brenoww/image-files/main/Exemplo-Cadastro-Produto.png?token=GHSAT0AAAAAACKBOHHL7YDIREPT3K464YX6ZKUGPRA)	
 
 	Request Body
 	```json
