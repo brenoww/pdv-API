@@ -255,10 +255,11 @@ VALUES
  	```js
   //Status Code: 200 OK
 	```
-##
+<br>
+
 > [!WARNING]
 > Apartir daqui **TODAS** as rotas requerem o token de login como Bearer Token
-##
+
 ### Detalhar Perfil do Usuário:
 
 **[GET]** `/usuario`
