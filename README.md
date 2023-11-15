@@ -201,7 +201,7 @@ VALUES
 - Node.js 
 - Express
 - PG (Postgres)
-  > _Pode ser substituído pelo client SQL de sua preferência_  
+> _Pode ser substituído pelo client SQL de sua preferência_  
 
 ## 📌 Endpoints
 
@@ -257,14 +257,49 @@ VALUES
 	```
  ##
 > [!WARNING]
-> Apartir daqui **TODAS** as rotas requerem o token de login
+> Apartir daqui **TODAS** as rotas requerem o token de login como Bearer Token
 
-### Detalhar Usuário:
+### Detalhar Perfil do Usuário:
 
 **[GET]** `/usuario`
 
+- Ao acessar esta rota, resgatando o id pela validação do login, o sistema retornará as seguintes informações do usuário logado:
+	Request Body
+	```js
+ 	//Sem corpo de requisição
+	```
+
+ 	Response Body  
+	```json		 	 
+	{
+ 	  "id": "1",
+	  "nome": "Nome Exemplo"
+ 	  "email": "exemplo@email.com"
+ 	}
+	```
+ 	```js
+  //Status Code: 200 OK
+	```
 
 ### Atualizar Usuário:
+
+**[PUT]** `/usuario`
+
+- Ao acessar esta rota, resgatando o id pela validação do login e passando o seguinte JSON no corpo da requisição, o sistema atualizará os dados do usuario e retornará as seguintes informações:
+	Request Body
+	```json
+ 	{
+ 	  "nome": "Nome Completo Exemplo",
+ 	  "email": "exemplo2@email.com",
+ 	  "senha": "nova_senha_exemplo"
+	}
+	```
+
+ 	Response Body
+  ```js  
+  //Status Code: 201 Created
+ 	//Sem resposta no corpo
+	```
 ##
 ### Cadastrar Produto:
 ### Detalhar Produto:
