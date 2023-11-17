@@ -29,7 +29,7 @@
 </p>
 
 ## 🛠️ Bibliotecas e Tecnologias
-### Tecnologias utilizdas:
+### Tecnologias utilizadas:
 <div>
 	<img align='center' height='50' title='Javascript' alt='javascript' src='https://user-images.githubusercontent.com/25181517/117447155-6a868a00-af3d-11eb-9cfe-245df15c9f3f.png'> 
 	<img align='center' height='55' title='Node.js' alt='node.js' src='https://user-images.githubusercontent.com/25181517/183568594-85e280a7-0d7e-4d1a-9028-c8c2209e073c.png'> 
@@ -678,11 +678,96 @@ VALUES
 	```
 ## 
 ### Cadastrar Pedidos:
+
+**[POST]** `/pedido`
+
+- Ao acessar esta rota, passando o seguinte JSON no corpo da requisição (body), o sistema cadastrará o pedido e retornará as seguintes informações:
+
+	
+	Request Body
+	```json
+	{
+    	  "cliente_id": 1,
+    	  "observacao": "Em caso de ausência recomendo deixar com algum vizinho",
+    	  "pedido_produtos": [
+ 	    {
+ 	      "produto_id": 1,
+ 	      "quantidade_produto": 10
+	    },
+ 	    {
+ 	      "produto_id": 2,
+ 	      "quantidade_produto": 20
+ 	    }
+ 	  ]
+	}
+	```
+ 	
+ 	Response Body
+	```js   	
+  	//Status Code: 200 OK
+   	//Sem resposta no corpo
+ 	//Envio de email do pedido efetuado com sucesso!
+	```
+ 
 ### Listar Pedidos:
+
+**[GET]** `/pedido`
+
+- Ao acessar esta rota, o sistema retornará todos os pedidos cadastrados, com as seguintes informações:
+- *O detalhamento pode ser filtrado pelo cliente, declarando um query params `?cliente_id="id"` no fim da URL.<br> Ex.: `/pedido?cliente_id="1"`
+
+	
+	Request Body
+	```js
+ 	//Sem corpo de requisição
+	```
+
+	Response Body
+	```json
+ 	[
+ 	  {
+    	    "cliente_id": 1,
+    	    "observacao": "Em caso de ausência recomendo deixar com algum vizinho",
+    	    "pedido_produtos": [
+ 	      {
+ 	        "produto_id": 1,
+ 	        "quantidade_produto": 10
+	      },
+ 	      {
+ 	        "produto_id": 2,
+ 	        "quantidade_produto": 20
+ 	      }
+ 	    ]
+	  }, 
+ 	  {
+    	    "cliente_id": 2,
+    	    "observacao": null,
+    	    "pedido_produtos": [
+ 	      {
+ 	        "produto_id": 1,
+ 	        "quantidade_produto": 10
+	      },
+ 	      {
+ 	        "produto_id": 2,
+ 	        "quantidade_produto": 20
+ 	      }
+ 	    ]
+	  }
+ 	]
+	```
+  	```js   	
+  	//Status Code: 200 OK
+	```
 
 ## 👨🏻‍💻 Colaboradores
 
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/"><img style="border-radius: 50%;" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" width="100px;" alt=""/><br /><sub><b>Por Nome</b></sub></a><br/></td>
+    <td align="center"><a href="https://github.com/"><img style="border-radius: 50%;" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" width="100px;" alt=""/><br /><sub><b>Por Nome</b></sub></a><br /></td>
 
+  </tr>
+</table>
   
 
 
