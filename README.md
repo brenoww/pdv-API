@@ -1,5 +1,26 @@
 # 📠 Pdv API
-![version](https://img.shields.io/badge/version-1.0.0-blue)
+
+<p align="center">
+	<img alt="API version" src='https://img.shields.io/badge/version-1.0.0-blue'>
+  <img alt="GitHub lang count" src="https://img.shields.io/github/languages/count/brenoww/pdv-API?color=%2304D361">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/brenoww/pdv-API">  
+	<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/brenoww/pdv-API">
+  <a href="https://github.com/brenoww">
+    <img alt="Feito por Breno Villas Boas" src="https://img.shields.io/badge/feito-por%20Breno%20Villas%20Boas-D818A5?style=social">
+  </a>   
+  <a href="https://github.com/brenoww/pdv_API/stargazers">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/brenoww/pdv-API?style=social">
+  </a>
+</p>
+
+[Sobre](#-sobre-o-projeto) •
+[Funcionalidades](#-funcionalidades) •
+[Como Executar](#-como-executar-o-projeto) •
+[Tecnologias](#-tecnologias) •
+[Endpoints da API](#-endpoints-da-api) •
+[Implementações Futuras](#-implementações-futuras) •
+[Referências](#-referências) •
+[Contribuidores](#-contribuidores)
 ## 📂 Sobre o Projeto
 
 <p align='justify'>
@@ -221,7 +242,6 @@ VALUES
 
 - Ao acessar esta rota, passando o seguinte JSON no corpo da requisição (body), será cadastrado um usuário no sistema:
 
-
 	Request Body
 	```json		 	 
 	{
@@ -275,6 +295,7 @@ VALUES
 **[GET]** `/usuario`
 
 - Ao acessar esta rota, resgatando o id pela validação do login, o sistema retornará as seguintes informações do usuário logado:
+
 	Request Body
 	```js
  	//Sem corpo de requisição
@@ -297,6 +318,7 @@ VALUES
 **[PUT]** `/usuario`
 
 - Ao acessar esta rota, resgatando o id pela validação do login e passando o seguinte JSON no corpo da requisição, o sistema atualizará os dados do usuario e retornará as seguintes informações:
+
 	Request Body
 	```json
  	{
@@ -348,6 +370,23 @@ VALUES
 	```
 
  	Response Body
+   ```js  
+  //Status Code: 201 Created
+  //Sem resposta no corpo
+	```
+  
+### Detalhar Produto:
+
+**[GET]** `/produto/:id`
+
+- Ao acessar esta rota, passando um **ID** válido como um params na URL, o sistema detalhará o produto, retornando as seguintes informações:
+
+	Request Body
+	```js
+ 	//Sem corpo de requisição
+	```
+
+ 	Response Body
   ```json
 	{
 		"id": 1,
@@ -355,15 +394,39 @@ VALUES
 		"quantidade_estoque": 10,
 		"valor": 1000,
 		"categoria_id": 1,
-		"produto_imagem": "https://bucket.endpoint.com/imagens/produto/1/filename.png"
+		"produto_imagem": "https://bucket.endpoint.com/imagens/produto/id/filename.png"
 	}
   ```
   ```js  
-  //Status Code: 201 Created  
+  //Status Code: 200 OK  
+	```
+  
+### Listar Produtos:
+
+**[GET]** `/produto`
+
+- Ao acessar esta rota, o sistema detalhará todos produtos cadastrados, retornando as seguintes informações:
+- *O detalhamento pode ser filtrado pela categoria, declarando um query params `?cateogoria_id="id"` no fim da URL. Ex.: `/produto?cateogoria_id="1"`
+
+	Request Body
+	```js
+ 	//Sem corpo de requisição
 	```
 
-### Detalhar Produto:
-### Listar Produtos:
+ 	Response Body
+  ```json
+	{
+		"id": 1,
+		"descricao": "produto-exemplo",
+		"quantidade_estoque": 10,
+		"valor": 1000,
+		"categoria_id": 1,
+		"produto_imagem": "https://bucket.endpoint.com/imagens/produto/id/filename.png"
+	}
+  ```
+  ```js  
+  //Status Code: 200 OK  
+	```
 ### Editar Produto:
 ### Excluir Produto:
 ##
