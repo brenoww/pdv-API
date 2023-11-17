@@ -19,8 +19,8 @@
 [Como Executar](#%EF%B8%8F-como-executar) •
 [Estruturação do Banco de Dados](#%EF%B8%8F-estruturação-do-banco-de-dados) •
 [Endpoints](#-endpoints) •
-[Colaboradores](#%EF%B8%8F-colaboradores) •
-[Contribuidores](#-contribuidores)
+[Colaboradores](#-colaboradores)
+
 ## 📂 Sobre o Projeto
 
 <p align='justify'>
