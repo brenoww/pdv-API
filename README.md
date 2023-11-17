@@ -763,7 +763,7 @@ VALUES
 
 <table>
 	<tr>
-		<td align="center"><a href="https://github.com/"><img style="border-radius: 50%;" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" width="100px;" alt=""/><br /><sub><b>Por Nome</b></sub></a><br/></td>
+		<td align="center"><a href=""><img style="border-radius: 50%;" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" width="100px;" alt=""/><br /><sub><b>Por Nome</b></sub></a><br/></td>
 		<td align="center"><a href="https://github.com/"><img style="border-radius: 50%;" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" width="100px;" alt=""/><br /><sub><b>Por Nome</b></sub></a><br /></td>
 	</tr>
 </table>
