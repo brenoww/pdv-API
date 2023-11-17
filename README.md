@@ -18,7 +18,7 @@
 [Funcionalidades](#%EF%B8%8F-funcionalidades) •
 [Como Executar](#%EF%B8%8F-como-executar) •
 [Estruturação do Banco de Dados](#%EF%B8%8F-estruturação-do-banco-de-dados) •
-[Implementações Futuras](#-implementações-futuras) •
+[Endpoints](#-endpoints) •
 [Referências](#-referências) •
 [Contribuidores](#-contribuidores)
 ## 📂 Sobre o Projeto
