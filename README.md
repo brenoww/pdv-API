@@ -13,7 +13,7 @@
 	</a>
 </p>
 
-[Sobre](#-sobre-o-projeto) •
+[Sobre o Projeto](#-sobre-o-projeto) •
 [Bibliotecas e Tecnologias](#%EF%B8%8F-bibliotecas-e-tecnologias) •
 [Funcionalidades](#%EF%B8%8F-funcionalidades) •
 [Como Executar](#-como-executar) •
