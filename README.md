@@ -252,9 +252,15 @@ VALUES
 	```
 
  	Response Body
-	```js
- 	//Status Code: 201 Created
- 	//Sem resposta no corpo		 
+	```json		 	 
+	{
+ 	  "id": "1",
+	  "nome": "Nome Exemplo"
+ 	  "email": "exemplo@email.com"
+ 	}
+	```
+ 	```js
+  //Status Code: 201 Created
 	```
  
 ### Fazer Login:
@@ -370,9 +376,18 @@ VALUES
 	```
 
  	Response Body
-   ```js  
+   ```json  
+	{
+	  "id": 1,
+	  "descricao": "produto-exemplo",
+	  "quantidade_estoque": 10,
+	  "valor": 1000,
+	  "categoria_id": 1,
+	  "produto_imagem": "https://bucket.endpoint/imagens/produto/1/produto-exemplo.png"
+	}
+	```
+  ```js
   //Status Code: 201 Created
-  //Sem resposta no corpo
 	```
   
 ### Detalhar Produto:
@@ -389,12 +404,12 @@ VALUES
  	Response Body
   ```json
 	{
-		"id": 1,
-		"descricao": "produto-exemplo",
-		"quantidade_estoque": 10,
-		"valor": 1000,
-		"categoria_id": 1,
-		"produto_imagem": "https://bucket.endpoint.com/imagens/produto/id/produto-exemplo"
+	  "id": 1,
+	  "descricao": "produto-exemplo",
+	  "quantidade_estoque": 10,
+	  "valor": 1000,
+	  "categoria_id": 1,
+	  "produto_imagem": "https://bucket.endpoint.com/imagens/produto/id/produto-exemplo"
 	}
   ```
   ```js  
@@ -424,7 +439,7 @@ VALUES
 	    "categoria_id": 1,
 	    "produto_imagem": "https://bucket.endpoint.com/imagens/produto/1/produto-exemplo.png"
 	  }
-    {
+	  {
 	    "id": 2,
 	    "descricao": "produto-exemplo-2",
 	    "quantidade_estoque": 15,
@@ -432,7 +447,7 @@ VALUES
 	    "categoria_id": 3,
 	    "produto_imagem": "https://bucket.endpoint.com/imagens/produto/2/produto-exemplo-2.png"
 	  }
-    {
+	  {
 	    "id": 3,
 	    "descricao": "produto-exemplo-3",
 	    "quantidade_estoque": 25,
@@ -483,11 +498,32 @@ VALUES
  
  	Response Body
    ```js  
-  //Status Code: 201 Created
+  //Status Code: 200 Ok
   //Sem resposta no corpo
 	```
   
 ### Excluir Produto:
+
+**[DELETE]** `/produto/:id`
+
+- Ao acessar esta rota, passando o `id` do produto como params da rota, o sistema apagará o registro do produto, retornando as seguintes informações:
+	
+	Request Body
+	```js
+ 	//Sem corpo de requisição
+	```
+	
+ 	Response Body
+  ```json
+  {
+	  "mensagem": "Produto excluído com sucesso!"
+	}  
+	```
+  ```
+	//Status Code: 200 OK
+  ```
+
+
 ##
 ### Cadastrar Cliente:
 ### Detalhar Cliente:
