@@ -376,7 +376,7 @@ VALUES
 	```
 
  	Response Body
-   ```json  
+   	```json  
 	{
 	  "id": 1,
 	  "descricao": "produto-exemplo",
@@ -386,7 +386,7 @@ VALUES
 	  "produto_imagem": "https://bucket.endpoint/imagens/produto/1/produto-exemplo.png"
 	}
 	```
-  ```js
+  	```js
   //Status Code: 201 Created
 	```
   
@@ -497,16 +497,16 @@ VALUES
 	```
  
  	Response Body
-   ```js  
-  //Status Code: 200 Ok
-  //Sem resposta no corpo
+   	```js  
+  	//Status Code: 200 Ok
+  	//Sem resposta no corpo
 	```
   
 ### Excluir Produto:
 
 **[DELETE]** `/produto/:id`
 
-- Ao acessar esta rota, passando o `id` do produto como params da rota, o sistema apagará o registro do produto, retornando as seguintes informações:
+- Ao acessar esta rota, passando o `id` do produto como params da rota, o sistema apagará o registro do produto relativo ao id, retornando as seguintes informações:
 	
 	Request Body
 	```js
@@ -514,23 +514,168 @@ VALUES
 	```
 	
  	Response Body
-  ```json
-  {
+ 	 ```json
+  	{
 	  "mensagem": "Produto excluído com sucesso!"
-	}  
+  	}  
 	```
-  ```
+	```js
 	//Status Code: 200 OK
-  ```
+  	```
 
 
 ##
 ### Cadastrar Cliente:
+
+**[POST]** `/cliente`
+
+- Ao acessar esta rota, passando o seguinte JSON no corpo da requisição (body), o sistema cadastrará o cliente e retornará as seguintes informações:
+
+	
+	Request Body
+	```json		 	 
+	{
+ 	  "nome": "Nome Exemplo Cliente",
+ 	  "email": "exemplo_cleinte@email.com",
+ 	  "cpf": "123.456.789-00"
+	}
+	```
+
+	Response Body
+	```json
+ 	{
+ 	  "mensagem": "Cliente cadastrado com sucesso!"
+	}
+	```
+  	```js   	
+  	//Status Code: 201 Created
+	```
+
 ### Detalhar Cliente:
+
+**[GET]** `/cliente/:id`
+
+- Ao acessar esta rota, passando um `id` como params da rota, o sistema retornará o cliente relativo ao **id**, com as seguintes informações:
+
+	
+	Request Body
+	```js
+ 	//Sem corpo de requisição
+	```
+
+	Response Body
+	```json
+ 	{
+	  "id": 1
+ 	  "nome": "Nome Exemplo Cliente",
+ 	  "email": "exemplo_cliente@email.com",
+ 	  "cpf": "123.456.789-00"
+	},
+	```
+  	```js   	
+  	//Status Code: 200 OK
+	```
+
 ### Listar Clientes:
+
+**[GET]** `/cliente`
+
+- Ao acessar esta rota, o sistema retornará todos os clientes cadastrados, com as seguintes informações:
+
+	
+	Request Body
+	```js
+ 	//Sem corpo de requisição
+	```
+
+	Response Body
+	```json
+ 	[
+ 	  {
+ 	    "id": 1
+ 	    "nome": "Nome Exemplo Cliente",
+ 	    "email": "exemplo_cliente@email.com",
+ 	    "cpf": "123.456.789-00"
+	  },
+ 	  {
+ 	    "id": 2
+ 	    "nome": "Nome Exemplo Cliente 2",
+ 	    "email": "exemplo_cliente2@email.com",
+ 	    "cpf": "123.456.789-01"
+	  },
+ 	  {
+ 	    "id": 3
+ 	    "nome": "Nome Exemplo Cliente 3",
+ 	    "email": "exemplo_cliente3@email.com",
+ 	    "cpf": "123.456.789-02"
+	  }
+ 	]
+	```
+  	```js   	
+  	//Status Code: 200 OK
+	```
+   
 ### Editar Cliente:
+
+**[PUT]** `/cliente/:id`
+
+- Ao acessar esta rota, passando um `id` como params da rota, o sistema atualizará os dados do cliente relativo ao **id** com as seguintes informações:
+
+	
+	Request Body
+	```json
+ 	{
+ 	  "nome": "Novo Nome Exemplo Cliente ",
+ 	  "email": "novo_exemplo_cliente@email.com",
+ 	  "cpf": "123.456.789-00"
+	}
+	```
+
+	Response Body
+	```js   	
+  	//Status Code: 200 OK
+   	//Sem resposta no corpo
+	```
+
 ##
 ### Listar Categorias:
+
+**[GET]** `/categoria`
+
+- Ao acessar esta rota, o sistema retornará todas as categorias cadastradas, com as seguintes informações:
+
+	
+	Request Body
+	```js
+ 	//Sem corpo de requisição
+	```
+
+	Response Body
+	```json
+ 	[
+ 	  {
+ 	    "id": 1,
+ 	    "nome": "Nome Exemplo Cliente",
+ 	    "email": "exemplo_cleinte@email.com",
+ 	    "cpf": "123.456.789-00"
+	  },
+ 	  {
+ 	    "id": 2,
+ 	    "nome": "Nome Exemplo Cliente 2",
+ 	    "email": "exemplo_cleinte2@email.com",
+ 	    "cpf": "123.456.789-01"
+	  },
+ 	  {
+ 	    "id": 3,
+ 	    "nome": "Nome Exemplo Cliente 3",
+ 	    "email": "exemplo_cleinte3@email.com",
+ 	    "cpf": "123.456.789-02"
+	  }
+ 	]
+	```
+  	```js   	
+  	//Status Code: 200 OK
+	```
 ## 
 ### Cadastrar Pedidos:
 ### Listar Pedidos:
