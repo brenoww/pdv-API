@@ -2,9 +2,10 @@
 ![version](https://img.shields.io/badge/version-1.0.0-blue)
 ## 📂 Sobre o Projeto
 
-Esta é uma **API RESTful** do sistema de um ponto de vendas (pdv) completa, desenvolvida com base em **Javascript**, **Express.js** e **Node.js**,  que dispõe de serviços de gerenciamento e armazenamento de produtos e pedidos efetuados, dados de usuarios (funcionários) e cadastro de clientes de maneira rápida, eficiente e com qualidade, fundamentada em operações **CRUD** e nos princípios **SOLID**.
-
-Todas as informações necessárias para compreender seu funcionamento e capacitar a utilização da API estão disponibilizadas e detalhadas abaixo, juntamente com suas especificações técnicas.
+<p align='justify'>
+	Esta é uma <b>API RESTful</b> do sistema de um ponto de vendas (pdv) completa, desenvolvida com base em <b>Javascript</b>, <b>Express.js</b> e <b>Node.js</b>,  que dispõe de serviços de gerenciamento e armazenamento de produtos e pedidos efetuados, dados de 					usuarios (funcionários) e cadastro de clientes de maneira rápida, eficiente e com qualidade, fundamentada em operações <b>CRUD</b> e nos princípios <b>SOLID</b>.<br><br>
+	Todas as informações necessárias para compreender seu funcionamento e capacitar a utilização da API estão disponibilizadas e detalhadas abaixo, juntamente com suas especificações técnicas.
+</p>
 
 ## 🛠️ Bibliotecas e Tecnologias
 ### Tecnologias utilizdas:
