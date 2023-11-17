@@ -31,13 +31,13 @@
 ## 🛠️ Bibliotecas e Tecnologias
 ### Tecnologias utilizdas:
 <div>
-	<img align='center' height='50' src='https://user-images.githubusercontent.com/25181517/117447155-6a868a00-af3d-11eb-9cfe-245df15c9f3f.png'> 
-	<img align='center' height='55' src='https://user-images.githubusercontent.com/25181517/183568594-85e280a7-0d7e-4d1a-9028-c8c2209e073c.png'> 
-	<img align='center' height='55' src='https://user-images.githubusercontent.com/25181517/183859966-a3462d8d-1bc7-4880-b353-e2cbed900ed6.png'>  
-	<img align='center' height='55' src='https://user-images.githubusercontent.com/25181517/117208740-bfb78400-adf5-11eb-97bb-09072b6bedfc.png'>
-	<img align='center' height='55' src='https://user-images.githubusercontent.com/25181517/183896132-54262f2e-6d98-41e3-8888-e40ab5a17326.png'> &nbsp;
-	<img align='center' height='50' src='https://user-images.githubusercontent.com/25181517/192108372-f71d70ac-7ae6-4c0d-8395-51d8870c2ef0.png'> &nbsp;
-	<img align='center' height='60' src='https://user-images.githubusercontent.com/25181517/121401671-49102800-c959-11eb-9f6f-74d49a5e1774.png'> &nbsp;
+	<img align='center' height='50' title='Javascript' alt='javascript' src='https://user-images.githubusercontent.com/25181517/117447155-6a868a00-af3d-11eb-9cfe-245df15c9f3f.png'> 
+	<img align='center' height='55' title='Node.js' alt='node.js' src='https://user-images.githubusercontent.com/25181517/183568594-85e280a7-0d7e-4d1a-9028-c8c2209e073c.png'> 
+	<img align='center' height='55' title='Express' alt='express' src='https://user-images.githubusercontent.com/25181517/183859966-a3462d8d-1bc7-4880-b353-e2cbed900ed6.png'>  
+	<img align='center' height='55' title='PostegreSQL' alt='postegres' src='https://user-images.githubusercontent.com/25181517/117208740-bfb78400-adf5-11eb-97bb-09072b6bedfc.png'>
+	<img align='center' height='55' title='AWS-SDK' alt='aws-sdk' src='https://user-images.githubusercontent.com/25181517/183896132-54262f2e-6d98-41e3-8888-e40ab5a17326.png'> &nbsp;
+	<img align='center' height='50' title='Git' alt='git' src='https://user-images.githubusercontent.com/25181517/192108372-f71d70ac-7ae6-4c0d-8395-51d8870c2ef0.png'> &nbsp;
+	<img align='center' height='60' title='NPM' alt='npm' src='https://user-images.githubusercontent.com/25181517/121401671-49102800-c959-11eb-9f6f-74d49a5e1774.png'> &nbsp;
 </div>
 
 ### Bibliotecas utilizadas:
