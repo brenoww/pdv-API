@@ -14,7 +14,7 @@
 </p>
 
 [Sobre](#-sobre-o-projeto) •
-[Bibliotecas e Tecnologias](#bibliotecas-e-tecnologias) •
+[Bibliotecas e Tecnologias](#%EF%B8%8F-bibliotecas-e-tecnologias) •
 [Funcionalidades](#%EF%B8%8F-funcionalidades) •
 [Como Executar](#-como-executar) •
 [Endpoints da API](#-endpoints-da-api) •
