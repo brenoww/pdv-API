@@ -17,7 +17,7 @@
 [Bibliotecas e Tecnologias](#%EF%B8%8F-bibliotecas-e-tecnologias) •
 [Funcionalidades](#%EF%B8%8F-funcionalidades) •
 [Como Executar](#%EF%B8%8F-como-executar) •
-[Endpoints da API](#-endpoints-da-api) •
+[Estruturação do Banco de Dados](#%EF%B8%8F-estruturação-do-banco-de-dados) •
 [Implementações Futuras](#-implementações-futuras) •
 [Referências](#-referências) •
 [Contribuidores](#-contribuidores)
