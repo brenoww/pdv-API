@@ -1,10 +1,40 @@
 # 📠 Pdv API
-
+![version](https://img.shields.io/badge/version-1.0.0-blue)
 ## 📂 Sobre o Projeto
 
-Esta é uma **API RESTful** do sistema de um ponto de vendas (pdv) completa, desenvolvida com base em **Javascript**, **Express.js** e **Node.js** que foi estruturada para sanar a demanda de um sistema que pudesse gerenciar e armazenar produtos e pedidos efetuados, dados de usuarios (funcionários) e cadastro de clientes de maneira rápida, eficiente e com qualidade.
+Esta é uma **API RESTful** do sistema de um ponto de vendas (pdv) completa, desenvolvida com base em **Javascript**, **Express.js** e **Node.js**,  que dispõe de serviços de gerenciamento e armazenamento de produtos e pedidos efetuados, dados de usuarios (funcionários) e cadastro de clientes de maneira rápida, eficiente e com qualidade, fundamentada em operações **CRUD** e nos princípios **SOLID**.
 
-Encontraremos aqui todas as informações necessárias para compreender seu funcionamento, capacitar a utilização da API disponibilizada e detalhar suas especificações técnicas.
+Todas as informações necessárias para compreender seu funcionamento e capacitar a utilização da API estão disponibilizadas e detalhadas abaixo, juntamente com suas especificações técnicas.
+
+## 🛠️ Bibliotecas e Tecnologias
+### Tecnologias utilizdas:
+<div>
+	<img align='center' height='50' src='https://user-images.githubusercontent.com/25181517/117447155-6a868a00-af3d-11eb-9cfe-245df15c9f3f.png'> 
+	<img align='center' height='55' src='https://user-images.githubusercontent.com/25181517/183568594-85e280a7-0d7e-4d1a-9028-c8c2209e073c.png'> 
+	<img align='center' height='55' src='https://user-images.githubusercontent.com/25181517/183859966-a3462d8d-1bc7-4880-b353-e2cbed900ed6.png'>  
+	<img align='center' height='55' src='https://user-images.githubusercontent.com/25181517/117208740-bfb78400-adf5-11eb-97bb-09072b6bedfc.png'>
+	<img align='center' height='55' src='https://user-images.githubusercontent.com/25181517/183896132-54262f2e-6d98-41e3-8888-e40ab5a17326.png'> &nbsp;
+	<img align='center' height='50' src='https://user-images.githubusercontent.com/25181517/192108372-f71d70ac-7ae6-4c0d-8395-51d8870c2ef0.png'> &nbsp;
+	<img align='center' height='60' src='https://user-images.githubusercontent.com/25181517/121401671-49102800-c959-11eb-9f6f-74d49a5e1774.png'> &nbsp;
+</div>
+
+### Bibliotecas utilizadas:
+<div>	
+	<img align='center' height='53' width='49' title='Nodemon' alt='nodemon' src='https://github.com/bush1D3v/solid_rest_api/assets/133554156/fd586348-7781-4e02-a4f0-fe7410ef43fb' />
+	<img align='center' height='75' width='70' title='AWS-SDK' alt='aws-sdk' src="https://cdn2.iconfinder.com/data/icons/amazon-aws-stencils/100/SDKs_copy_nodeJS-512.png">
+	<img align='center' height='65' width='65' title='JWT' alt='jwt' src="https://media.licdn.com/dms/image/D4D12AQHW9aRSWIOMxQ/article-cover_image-shrink_600_2000/0/1657421703592?e=2147483647&v=beta&t=nKygyfSDFwgPdEoC-nEkogMS0527SBa8z8D_FqUr-us"> 
+	<img align='center' height='55' title='Knex.js' alt='knex.js' src="https://static-00.iconduck.com/assets.00/knex-js-icon-512x512-a2yn0209.png"> &nbsp;
+	<img align='center' height='60' width='63' title='Nodemailer' alt='nodemailer' src="https://i0.wp.com/community.nodemailer.com/wp-content/uploads/2015/10/n2-2.png?fit=422%2C360&ssl=1"> &nbsp;
+	<img align='center' height='48' width='48' title='Dotenv' alt='dotenv' src="https://res.cloudinary.com/dg2dgzbt4/image/upload/v1587070177/external_assets/open_source/icons/dotenv.png"> &nbsp;
+	<img align='center' height='48' width='48' title='Cors' alt='cors' src="https://lh3.googleusercontent.com/hvYImHDFeqlR-EDeOW-8PTNwz5RBau0HG0uvW8nZJjphuN3VNk3tJzutC1zrD2b7RdBf7TJILMOUYFwOP8mBTArHsg=w128-h128-e365-rj-sc0x00ffffff"> &nbsp;
+	<img align='center' height='48' title='Bcrypt' alt='bcrypt' src="https://www.outsystems.com/Forge_CW/_image.aspx/Q8LvY--6WakOw9afDCuuGU30LWO2YUXQtIYwJY_Ac_c=/bcryptnet-2023-01-04%2000-00-00-2023-06-23%2016-23-53"> &nbsp;	
+</div>
+
+Outras:
+- ✅ JOI
+- 📑 Multer
+  
+  
 
 ## 🕹️ Funcionalidades
 
@@ -182,27 +212,6 @@ VALUES
 ```
 </details>
  
-## 🛠️ Bibliotecas e Tecnologias
-
-### Bibliotecas utilizadas:
-
-- 📋 Dotenv  
-- 📲 Cors
-- ✅ JOI
-- 🛢️ Knex.js    
-- 🔐 Bcrypt 
-- 🔑 Json Web Token - JWT 
-- 🌐 AWS-SDK
-- 📑 Multer
-- 📧 Nodemailer
-### Tecnologias utilizdas:
-
-- Npm
-- Node.js 
-- Express
-- PG (Postgres)
-> _Pode ser substituído pelo client SQL de sua preferência_  
-
 ## 📌 Endpoints
 
 ### Cadastrar Usuário:
