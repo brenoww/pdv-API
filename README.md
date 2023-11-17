@@ -319,7 +319,7 @@ VALUES
 
 	Exemplo:
 
-	![Exemplo-Cadastro-Produto](https://raw.githubusercontent.com/brenoww/image-files/main/Exemplo-Cadastro-Produto.png?token=GHSAT0AAAAAACKBOHHL7YDIREPT3K464YX6ZKUGPRA)	
+	![Exemplo-Cadastro-Produto](https://raw.githubusercontent.com/brenoww/images-backup/main/pdv-api/Exemplo-Cadastro-Produto.png)	
 
 	Request Body
 	```json
