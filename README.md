@@ -8,7 +8,7 @@
 	<a href="https://github.com/brenoww">
 		<img alt="Feito por Breno Villas Boas" src="https://img.shields.io/badge/feito-por%20Breno%20Villas%20Boas-D818A5?style=social">
 	</a>   
-	<a href="https://github.com/brenoww/pdv_API/stargazers">
+	<a href="https://github.com/brenoww/pdv_API/stargazers" style='text-decoration:none'>
 		<img alt="Stargazers" src="https://img.shields.io/github/stars/brenoww/pdv-API?style=social">
 	</a>
 </p>
