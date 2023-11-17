@@ -1,22 +1,22 @@
 # 📠 Pdv API
 
 <p align="center">
-	<img alt="API version" src='https://img.shields.io/badge/version-1.0.0-blue'>
-  <img alt="GitHub lang count" src="https://img.shields.io/github/languages/count/brenoww/pdv-API?color=%2304D361">
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/brenoww/pdv-API">  
+	<img alt="API version" src='https://img.shields.io/badge/version-1.0.0-blue'>	
+	<img alt="Repository size" src="https://img.shields.io/github/repo-size/brenoww/pdv-API">
+	<img alt="GitHub lang count" src="https://img.shields.io/github/languages/count/brenoww/pdv-API?color=%2304D361">
 	<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/brenoww/pdv-API">
-  <a href="https://github.com/brenoww">
-    <img alt="Feito por Breno Villas Boas" src="https://img.shields.io/badge/feito-por%20Breno%20Villas%20Boas-D818A5?style=social">
-  </a>   
-  <a href="https://github.com/brenoww/pdv_API/stargazers">
-    <img alt="Stargazers" src="https://img.shields.io/github/stars/brenoww/pdv-API?style=social">
-  </a>
+	<a href="https://github.com/brenoww">
+		<img alt="Feito por Breno Villas Boas" src="https://img.shields.io/badge/feito-por%20Breno%20Villas%20Boas-D818A5?style=social">
+	</a>   
+	<a href="https://github.com/brenoww/pdv_API/stargazers">
+		<img alt="Stargazers" src="https://img.shields.io/github/stars/brenoww/pdv-API?style=social">
+	</a>
 </p>
 
 [Sobre](#-sobre-o-projeto) •
+[Bibliotecas e Tecnologias](#bibliotecas-e-tecnologias) •
 [Funcionalidades](#-funcionalidades) •
-[Como Executar](#-como-executar-o-projeto) •
-[Tecnologias](#-tecnologias) •
+[Como Executar](#-como-executar) •
 [Endpoints da API](#-endpoints-da-api) •
 [Implementações Futuras](#-implementações-futuras) •
 [Referências](#-referências) •
