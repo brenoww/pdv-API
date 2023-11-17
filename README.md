@@ -394,7 +394,7 @@ VALUES
 		"quantidade_estoque": 10,
 		"valor": 1000,
 		"categoria_id": 1,
-		"produto_imagem": "https://bucket.endpoint.com/imagens/produto/id/filename.png"
+		"produto_imagem": "https://bucket.endpoint.com/imagens/produto/id/produto-exemplo"
 	}
   ```
   ```js  
@@ -406,7 +406,7 @@ VALUES
 **[GET]** `/produto`
 
 - Ao acessar esta rota, o sistema detalhará todos produtos cadastrados, retornando as seguintes informações:
-- *O detalhamento pode ser filtrado pela categoria, declarando um query params `?cateogoria_id="id"` no fim da URL. Ex.: `/produto?cateogoria_id="1"`
+- *O detalhamento pode ser filtrado pela categoria, declarando um query params `?cateogoria_id="id"` no fim da URL.<br> Ex.: `/produto?cateogoria_id="1"`
 
 	Request Body
 	```js
@@ -415,19 +415,78 @@ VALUES
 
  	Response Body
   ```json
-	{
-		"id": 1,
-		"descricao": "produto-exemplo",
-		"quantidade_estoque": 10,
-		"valor": 1000,
-		"categoria_id": 1,
-		"produto_imagem": "https://bucket.endpoint.com/imagens/produto/id/filename.png"
-	}
+  [  	
+	  {
+	    "id": 1,
+	    "descricao": "produto-exemplo",
+	    "quantidade_estoque": 10,
+	    "valor": 1000,
+	    "categoria_id": 1,
+	    "produto_imagem": "https://bucket.endpoint.com/imagens/produto/1/produto-exemplo.png"
+	  }
+    {
+	    "id": 2,
+	    "descricao": "produto-exemplo-2",
+	    "quantidade_estoque": 15,
+	    "valor": 900,
+	    "categoria_id": 3,
+	    "produto_imagem": "https://bucket.endpoint.com/imagens/produto/2/produto-exemplo-2.png"
+	  }
+    {
+	    "id": 3,
+	    "descricao": "produto-exemplo-3",
+	    "quantidade_estoque": 25,
+	    "valor": 2300,
+	    "categoria_id": 5,
+	    "produto_imagem": "https://bucket.endpoint.com/imagens/produto/3/produto-exemplo-3.png"
+	  }
+  ]
   ```
   ```js  
   //Status Code: 200 OK  
 	```
 ### Editar Produto:
+
+**[PUT]** `/produto/:id`
+
+- Ao acessar esta rota, passando o `id` do produto como params da rota, o seguinte JSON em uma variável **"dados_produto"** de tipo **multiline-text** e um arquivo de imagem (opcional) em uma variável **"imagem_produto"**, como um Multipart-Form/Data, como no exemplo abaixo, o sistema atualizará o produto e retornará as seguintes informações:
+
+	Exemplo:
+
+	![Exemplo-Cadastro-Produto](https://raw.githubusercontent.com/brenoww/images-backup/main/pdv-api/Exemplo-Cadastro-Produto.png)	
+
+	Request Body
+	```json
+	{
+ 	  "dados_produto": {
+ 	     "descricao": "produto-exemplo",
+	     "quantidade_estoque": 15,
+	     "valor": 1500,
+ 	     "categoria_id": 2
+ 	  }
+	}
+	```
+
+	Request Files
+	```json
+	{
+ 	  "imagem_produto": [
+	     {
+ 	       "originalname": "produto-exemplo-new-img",
+	       "buffer": "< image-buffer >",
+	       "size": 321321,
+ 	       "mimetype": "image/png"
+ 	     }
+	  ]
+	}
+	```
+ 
+ 	Response Body
+   ```js  
+  //Status Code: 201 Created
+  //Sem resposta no corpo
+	```
+  
 ### Excluir Produto:
 ##
 ### Cadastrar Cliente:
