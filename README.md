@@ -761,15 +761,15 @@ VALUES
 
 ## 👨🏻‍💻 Colaboradores
 
-<table>
-	<tr>
-		<td align="center"><a href="https://github.com/uri-hub"><img style="border-radius: 50%;" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" width="100px;" alt=""/><br /><sub><b>Uriel Barbosa</b></sub></a><br/></td>
-		<td align="center"><a href="https://github.com/josewkim94"><img style="border-radius: 50%;" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" width="100px;" alt=""/><br /><sub><b>José Wilson</b></sub></a><br /></td>
-  <td align="center"><a href="https://github.com/Julio-Cezar-Santos"><img style="border-radius: 50%;" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" width="100px;" alt=""/><br /><sub><b>Julio Cezar</b></sub></a><br/></td>
-<td align="center"><a href="https://github.com/srjonatas"><img style="border-radius: 50%;" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" width="100px;" alt=""/><br /><sub><b>Jonatas</b></sub></a><br/></td>
-</tr>
-</table>
+- **Uriel Barbosa**
   
-
-
+	<a href="https://github.com/uri-hub"><img style="border-radius: 50%;" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" width="110px;" alt=""/></a>
+- **José Wilson**
   
+	<a href="https://github.com/josewkim94"><img style="border-radius: 50%;" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" width="110px;" alt=""/></a>
+- **Julio Cezar**
+  
+	<a href="https://github.com/Julio-Cezar-Santos"><img style="border-radius: 50%;" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" width="110px;" alt=""/></a>
+- **Jonatas**
+  
+	<a href="https://github.com/srjonatas"><img style="border-radius: 50%;" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" width="110px;" alt=""/><br /></a>
