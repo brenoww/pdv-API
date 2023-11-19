@@ -13,8 +13,7 @@ const excluirProduto = async (req, res) => {
             if (produtoExistente) {
                 await deletarArquivo(produtoExistente.produto_imagem);
                 await knex("produtos").del().where({ id });
-
-                return res.status(200).json({ mensagem: "Produto removido com sucesso" });
+                return res.status(204).json({ mensagem: "Produto removido com sucesso" });
             } else {
                 return res.status(404).json({ mensagem: "Produto não encontrado" });
             }

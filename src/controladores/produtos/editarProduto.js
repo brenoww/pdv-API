@@ -34,7 +34,7 @@ const editarProduto = async (req, res) => {
             .where({ id })
             .returning("*");
 
-        return res.status(200).json(produtoEditado);
+        return res.status(200).json(produtoEditado[0]);
     } catch (error) {
         return res.status(500).json({ mensagem: error.message });
     }

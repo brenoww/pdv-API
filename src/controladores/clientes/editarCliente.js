@@ -42,7 +42,7 @@ const editarCliente = async (req, res) => {
 
         return res.status(200).json(clienteAtualizado);
     } catch (error) {
-        return res.status(404).json({ mensagem: error.message });
+        return res.status(error.staus | 500).json({ mensagem: error.message });
     }
 };
 
