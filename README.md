@@ -761,9 +761,10 @@ VALUES
 
 ## 👨🏻‍💻 Colaboradores
 
+| **Uriel Barbosa** | <div style="text-algin: center;"><a href="https://github.com/uri-hub"><img style="border-radius: 50%; display: block;" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" width="110px;" alt=""/></a></div> |
 - **Uriel Barbosa**
   
-	<a href="https://github.com/uri-hub"><img style="border-radius: 50%;" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" width="110px;" alt=""/></a>
+	<div style="text-algin: center;"><a href="https://github.com/uri-hub"><img style="border-radius: 50%; display: block;" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" width="110px;" alt=""/></a></div>
 - **José Wilson**
   
 	<a href="https://github.com/josewkim94"><img style="border-radius: 50%;" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" width="110px;" alt=""/></a>
