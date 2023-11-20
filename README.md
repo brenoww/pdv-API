@@ -761,16 +761,9 @@ VALUES
 
 ## 👨🏻‍💻 Colaboradores
 
+| Colab | Social |
+|-----|-----|
 | **Uriel Barbosa** | <div style="text-algin: center;"><a href="https://github.com/uri-hub"><img style="border-radius: 50%; display: block;" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" width="110px;" alt=""/></a></div> |
-- **Uriel Barbosa**
-  
-	<div style="text-algin: center;"><a href="https://github.com/uri-hub"><img style="border-radius: 50%; display: block;" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" width="110px;" alt=""/></a></div>
-- **José Wilson**
-  
-	<a href="https://github.com/josewkim94"><img style="border-radius: 50%;" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" width="110px;" alt=""/></a>
-- **Julio Cezar**
-  
-	<a href="https://github.com/Julio-Cezar-Santos"><img style="border-radius: 50%;" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" width="110px;" alt=""/></a>
-- **Jonatas**
-  
-	<a href="https://github.com/srjonatas"><img style="border-radius: 50%;" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" width="110px;" alt=""/><br /></a>
+| **José Wilson** | <div style="text-algin: center;"><a href="https://github.com/josewkim94"><img style="border-radius: 50%; display: block;" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" width="110px;" alt=""/></a></div> |
+| **Julio Cezar** | <div style="text-algin: center;"><a href="https://github.com/Julio-Cezar-Santos"><img style="border-radius: 50%; display: block;" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" width="110px;" alt=""/></a></div> |
+| **Jonatas** | <div style="text-algin: center;"><a href="https://github.com/srjonatas"><img style="border-radius: 50%; display: block;" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" width="110px;" alt=""/></a></div> |
