@@ -767,3 +767,5 @@ VALUES
 | **José Wilson** | <div style="text-algin: center;"><a href="https://github.com/josewkim94"><img style="border-radius: 50%; display: block;" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" width="110px;" alt=""/></a></div> |
 | **Julio Cezar** | <div style="text-algin: center;"><a href="https://github.com/Julio-Cezar-Santos"><img style="border-radius: 50%; display: block;" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" width="110px;" alt=""/></a></div> |
 | **Jonatas** | <div style="text-algin: center;"><a href="https://github.com/srjonatas"><img style="border-radius: 50%; display: block;" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" width="110px;" alt=""/></a></div> |
+
+https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white
