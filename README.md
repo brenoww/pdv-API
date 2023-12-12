@@ -107,7 +107,7 @@ Categorias
     npm install
     ```
 
-3. Após a instalação ser efetuada, crie e configure seu arquivo **.env** com base no .env.example:
+3. Após a instalação ser efetuada, crie na raiz do projeto e configure seu arquivo **.env** com base no .env.example:
 
     ```env
     # Porta para o Express
