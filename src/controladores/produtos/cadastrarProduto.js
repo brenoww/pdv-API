@@ -1,6 +1,6 @@
 const knex = require("../../conexoes/knex");
-const buscarErroSeEncontrado = require("../../utilitarios/servicos/buscarErroSeEncontrado");
-const buscarErroSeNaoEncontrado = require("../../utilitarios/servicos/buscarErroSeNaoEcontrado");
+const naoExiste = require("../../utilitarios/servicos/naoExiste");
+const existe = require("../../utilitarios/servicos/existe");
 const { uploadArquivo } = require("../../utilitarios/servicos/uploads");
 
 const cadastrarProduto = async (req, res) => {
@@ -9,8 +9,8 @@ const cadastrarProduto = async (req, res) => {
     const [imagem] = imagem_produto;
 
     try {
-        await buscarErroSeEncontrado("produtos", "descricao", descricao, "Produto já cadastrado");
-        await buscarErroSeNaoEncontrado("categorias", "id", categoria_id, "Categoria não encontrada.");
+        await naoExiste("produtos", "descricao", descricao, "Produto já cadastrado");
+        await existe("categorias", "id", categoria_id, "Categoria não encontrada.");
 
         const produto = await knex("produtos")
             .insert({

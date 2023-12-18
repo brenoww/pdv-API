@@ -1,5 +1,5 @@
 const knex = require("../../conexoes/knex");
-const buscarSemErro = require("../../utilitarios/servicos/buscarSemErro");
+const encontrar = require("../../utilitarios/servicos/encontrar");
 
 const listarProdutos = async (req, res) => {
     const { categoria_id } = req.query;
@@ -8,7 +8,7 @@ const listarProdutos = async (req, res) => {
         let produtos = [];
 
         if (categoria_id) {
-            const categoria = buscarSemErro("categorias", "id", categoria_id);
+            const categoria = encontrar("categorias", "id", categoria_id);
             if (!categoria) {
                 return res.status(400).json({ mensagem: "O ID de categoria é inválido." });
             }

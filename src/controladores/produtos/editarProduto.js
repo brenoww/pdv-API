@@ -1,5 +1,5 @@
 const knex = require("../../conexoes/knex");
-const buscarErroSeNaoEncontrado = require("../../utilitarios/servicos/buscarErroSeNaoEcontrado");
+const existe = require("../../utilitarios/servicos/existe");
 const { deletarArquivo, uploadArquivo } = require("../../utilitarios/servicos/uploads");
 
 const editarProduto = async (req, res) => {
@@ -9,8 +9,8 @@ const editarProduto = async (req, res) => {
     const { id } = req.params;
 
     try {
-        await buscarErroSeNaoEncontrado("produtos", "id", id, "Produto não encontrado.");
-        await buscarErroSeNaoEncontrado("categorias", "id", categoria_id, "Categoria não encontrada.");
+        await existe("produtos", "id", id, "Produto não encontrado.");
+        await existe("categorias", "id", categoria_id, "Categoria não encontrada.");
 
         const { produto_imagem: path } = await knex("produtos").select("produto_imagem").where({ id }).first();
 

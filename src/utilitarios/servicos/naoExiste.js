@@ -1,6 +1,6 @@
 const knex = require("../../conexoes/knex");
 
-const buscarErroSeEncontrado = async (tabela, campo, valor, mensagemErro) => {
+const naoExiste = async (tabela, campo, valor, mensagemErro) => {
     try {
         const encontrado = await knex.select("*").from(tabela).where(campo, valor).first();
         if (encontrado) {
@@ -13,4 +13,4 @@ const buscarErroSeEncontrado = async (tabela, campo, valor, mensagemErro) => {
     }
 };
 
-module.exports = buscarErroSeEncontrado;
+module.exports = naoExiste;

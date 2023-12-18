@@ -1,12 +1,12 @@
 const knex = require("../../conexoes/knex");
-const buscarErroSeEncontrado = require("../../utilitarios/servicos/buscarErroSeEncontrado");
+const naoExiste = require("../../utilitarios/servicos/naoExiste");
 
 const cadastrarCliente = async (req, res) => {
     const { nome, email, cpf, cep, rua, numero, bairro, cidade, estado } = req.body;
 
     try {
-        await buscarErroSeEncontrado("clientes", "email", email, "Cliente já cadastrado!");
-        await buscarErroSeEncontrado("clientes", "cpf", cpf, "Cpf já cadastrado!");
+        await naoExiste("clientes", "email", email, "Cliente já cadastrado!");
+        await naoExiste("clientes", "cpf", cpf, "Cpf já cadastrado!");
 
         await knex("clientes").insert({
             nome,

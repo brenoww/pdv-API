@@ -1,5 +1,5 @@
 const knex = require("../../conexoes/knex");
-const buscarErroSeNaoEcontrado = require("../../utilitarios/servicos/buscarErroSeNaoEcontrado");
+const existe = require("../../utilitarios/servicos/existe");
 const { sendMail } = require("../../utilitarios/servicos/sendMail");
 
 const cadastrarPedido = async (req, res) => {
@@ -8,19 +8,30 @@ const cadastrarPedido = async (req, res) => {
         if (!cliente_id || !pedido_produtos || pedido_produtos.length === 0) {
             return res.status(400).json({ mensagem: "Campos obrigatórios não preenchidos" });
         }
-        await buscarErroSeNaoEcontrado("clientes", "id", cliente_id, "Cliente nao encontrado.");
-        let valorTotal = 0;
-        for (item of pedido_produtos) {
-            const { produto_id, quantidade_produto } = item;
 
+        await existe("clientes", "id", cliente_id, "Cliente nao encontrado.");
+
+        let valorTotal = 0;
+
+        for (let item of pedido_produtos) {
+            const { produto_id, quantidade_produto } = item;
             const produto = await knex("produtos").where({ id: produto_id }).first();
+
             if (!produto) {
                 return res.status(404).json({ mensagem: "Produto não encontrado" });
             }
-            if (quantidade_produto > produto.quantidade_estoque)
-                return res
-                    .status(404)
-                    .json({ message: `quantidade pedida do produto *${produto.descricao}* é menor do que em estoque` });
+            if (quantidade_produto > produto.quantidade_estoque) {
+                return res.status(404).json({
+                    message: `
+                quantidade pedida do produto *${produto.descricao}* é menor do que em estoque
+                `,
+                });
+            }
+        }
+
+        for (let item of pedido_produtos) {
+            const { produto_id, quantidade_produto } = item;
+            const produto = await knex("produtos").where({ id: produto_id }).first();
 
             valorTotal += produto.valor * quantidade_produto;
 
